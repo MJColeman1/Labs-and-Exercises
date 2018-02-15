@@ -50,13 +50,11 @@ public class PigDice {
                         if (turnTotal < 20) {
                           out.println("Computer will roll again.");
                         }
-                        else if (turnTotal >= 20) {
-                          break;
-                        }
                     }
               } while (roll != 1 && turnTotal < 20);
 
               ctot += turnTotal;
+
               out.print("\tComputer ends the round with " + ctot + " points.\n");
           }
     } while (ptot < 100 && ctot < 100);
